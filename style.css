@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    /* background-color: #0f0f0f; */
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 65px;
+    /* padding: 0 10px; */
+    background-color: #141414
+    
+}
+ul{
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+}
+li{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    /* width: 100px; */
+    align-items: center;
+    justify-content: center;
+}
+ul a{
+    padding: 5px 10px;
+    /* width: 100px; */
+    position: relative;
+    font-family: 'Manrope', sans-serif;
+/* font-family: 'Staatliches', cursive; */
+    text-decoration: none;
+    background-color: #141414;
+    color: #fff;
+    transition: .4s ease-in;
+    z-index: 1;
+    border-radius: 7px;
+}
+
+button::before,
+button::after{
+    position: absolute;
+    content: "";
+    z-index: 1;
+}
+
+.btn-1:hover{
+    color: black;
+    background-color: #66ebab;
+    box-shadow: 0 0 5px #66ebab, 0 0 25px
+    #66ebab, 0 0 50px #66ebab, 0 0 200px #66ebab;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+.secTitular{
+    display: flex;
+    background-image: url("https://cdn.discordapp.com/attachments/1159225647479132281/1159229359568207882/fondo-pantalla-textura-marmol-fl.png?ex=65304378&is=651dce78&hm=410bd21028f92fd7b16b3e37a3dd4ebdc39ed0a4e8584b19061095f6ecac435a&");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+    height: 531px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotoPerfil{
+    border-radius: 100%;
+    width: 300px;
+}
+
+.divProyectos{
+    display: flex;
+}
+.imgcontainer{
+    padding: 20px;
+}
+.titular{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* font-weight: 800; */
+    padding: 20px;
+
+}
+.titular h1{
+    font-size:xx-large;
+    font-weight: 9000;
+    width: 300px;
+    padding: 10px;
+    border-bottom: solid #fff 1px;
+}
+
+.titular h2{
+    font-size: medium;
+    padding: 10px;
+    position: relative;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.05em;
+    /* font-weight: 100; */
+}
+.titular h2 span{
+    color: #555;
+    transition: 0.25s;
+}
+.titular h2:hover span{
+    color: #0f0;
+    text-shadow: 0 0 5px #0f0,
+    0 0 15px #0f0,
+    0 0 30px #0f0;
+    
+}
+
+.btnDescv{
+    padding: 10px;
+
+}
+.boton{
+    background-color: #66ebab;
+    text-decoration: none;
+    color: #111;
+    font-family: 'Jost', sans-serif;
+    font-size: larger;
+    border-radius: 20px;
+    width: 100px;
+    padding: 5px 10px;
+    transition: .4s ease-in;
+}
+.boton:hover{
+    color: black;
+    background-color: #66ebab;
+    box-shadow: 0 0 5px #66ebab, 0 0 15px
+    #66ebab, 0 0 40px #66ebab, 0 0 100px #66ebab;
+}
+/*------------------------------PROYECTOS---------------------------*/
+
+.Proyectos{
+    display: flex;
+    flex-direction: column;
+    background-color: #0f0f0f;
+    color: white;
+    text-align: center;
+    height: 400px auto;
+    padding: 20px;
+}
+.projectContainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    /* margin: 50px; */
+    /* text-align: left; */
+}
+.card{
+    width: 400px;
+ /* border: 1px solid white; */
+    background-color: #1d1d1d;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    -webkit-box-shadow:0px 10px 39px 3px rgba(255,255,255,0.15);
+    -moz-box-shadow: 0px 10px 39px 3px rgba(255,255,255,0.15);
+    box-shadow: 0px 10px 39px 3px rgba(255,255,255,0.15);
+    margin: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover{
+    /* cursor: pointer;
+    background-color: white;
+    box-shadow: 0 0 5px #fff, 0 0 25px
+    #fff, 0 0 50px #fff, 0 0 200px #fff; */
+    -webkit-box-shadow:0px 10px 39px 20px rgba(255,255,255,0.2);
+    -moz-box-shadow: 0px 10px 39px 20px rgba(255,255,255,0.2);
+    box-shadow: 0px 10px 39px 20px rgba(255,255,255,0.2) !important; 
+}
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.cardText{
+    /* padding: 40px; */
+    text-align: left;
+    padding: 10px;
+}
+
+.cardText h2{
+    /* padding-top: 10px; */
+    padding-bottom: 10px;
+}
+
+.btnCard{
+    background-color: #66ebab;
+    color: #111;
+    /* font-weight: bolder; */
+    border-radius: 20px;
+    width: 100px;
+}
+
+.imgProject{
+    width: 400px;
+}
+
+.tecnCard{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+.cardIcon{
+    width: 50px;
+}
+
+.cardBotones{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*----------------------------------------------------------------------*/
+
+.about{
+    /* position: relative; */
+    height: 700px auto;
+    background-image: url("https://cdn.discordapp.com/attachments/1159225647479132281/1160678346569552012/DISENO_1920x1920_blackWaves3.png?ex=653588f2&is=652313f2&hm=c317cb88bd45feae2640b14c7c56aa816026370d6bd49c1c8db6ac10ab37a014&");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* width: 1280px; */
+    /* justify-content: center; */
+    align-items: center;
+    /* place-items: center; */
+    /* margin: 30px; */
+}
+
+.boxText{
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.aboutText{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 200;
+    width: 600px;
+    height: 200px;
+    align-items: center;
+    text-align: left;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border: 1px solid white; */
+    padding: 20px;
+}
+.aboutCont{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 200;
+    width: 600px;
+    height: 200px;
+    align-items: center;
+    text-align: left;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border: 1px solid white; */
+    padding: 20px;
+}
+.cardEducation{
+    display: flex;
+    background-color: #0f0f0f;
+    width: 500px;
+    padding: 20px;
+}
+.cardEducation img{
+    width: 100px;
+    height: 100px;
+}
+.cardText{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);;
+} */
+.aboutTec{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* border: 1px solid white; */
+    width: 700px;
+}
+.tecnologias{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20px; */
+}
+.tecIcon{
+    display: flex;
+    
+    padding: 10px;
+    margin: 10px;
+    /* border: 1px solid white; */
+    width: 100px auto;
+    border-radius: 15px;
+    background-color: #1d1d1d;
+}
+.tecIcon img{
+    width:25px;
+    padding-right: 10px;
+}
+
+/*--------------------------------------------------------------*/
+
+.sectContacto{
+    height: 600px;
+    background-color: #0f0f0f;
+    color: #Fff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    
+
+ 
+}
+.contacto{
+    display: flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 900px;
+    margin: 40px;
+    /* padding: 50px; */
+    /* gap: 50px; */
+    
+    /* flex-grow: 1;
+    flex-basis: 200; */
+}
+
+.contactCont{
+    display: flex;
+    
+
+}
+.cnt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 0px;
+    margin: 50px;
+    
+    /* height: 400px; */
+}
+
+.btnContact1{
+    padding: 20px;
+}
+.btnContact1 a{
+    margin: 10px;
+}
+.btnContacto{
+    border-radius: 10px;
+    padding: 10px 10px 8px 10px;
+    /* cursor: pointer;
+    transition: transform 0.3s; */
+}
+.btnContacto:hover{
+    transform: scale(1.1);
+    background-color: #111;
+    box-shadow: 0 0 5px #66ebab, 0 0 25px
+    #66ebab, 0 0 50px #66ebab, 0 0 200px #66ebab;
+}
+.cardCTN{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.cardCTN p{
+    padding-left: 30px;
+}
+.cardCTN a{
+    text-decoration: none;
+    color: #FFF;
+    padding-left: 20px;
+}
+
+.formulario{
+    width: 400px;
+    max-width: 700px;
+    
+    background-color: #141414;
+    border-radius: 20px;
+    /* padding: 50px; */
+    -webkit-box-shadow:0px 0px 37px 6px rgba(102,235,171,0.2);
+-moz-box-shadow: 0px 0px 37px 6px rgba(102,235,171,0.2);
+box-shadow: 0px 0px 37px 6px rgba(102,235,171,0.2);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.styled-input {
+    
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 20px;
+}
+input[type="submit"] {
+    width: 100px;
+    margin: 20px;
+    background-color: #66ebab;
+    color: #111;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+ion-icon {
+    color: #66ebab;
+    /* width: 100px; */
+  }
