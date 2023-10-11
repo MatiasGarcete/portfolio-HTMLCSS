@@ -244,6 +244,8 @@ button::after{
 .about{
     /* position: relative; */
     height: 700px auto;
+    /* width: 1280px; */
+    /* max-width: 500px; */
     background-image: url("https://cdn.discordapp.com/attachments/1159225647479132281/1160678346569552012/DISENO_1920x1920_blackWaves3.png?ex=653588f2&is=652313f2&hm=c317cb88bd45feae2640b14c7c56aa816026370d6bd49c1c8db6ac10ab37a014&");
     background-size: cover;
     background-repeat: no-repeat;
@@ -275,6 +277,7 @@ button::after{
     flex-grow: 1;
     flex-basis: 200;
     width: 600px auto;
+    max-width: 600px;
     height: 200px;
     align-items: center;
     text-align: left;
@@ -301,6 +304,7 @@ button::after{
     display: flex;
     background-color: #0f0f0f;
     width: 500px auto;
+    max-width: 500px;
     padding: 20px;
 }
 .cardEducation img{
@@ -326,6 +330,7 @@ button::after{
     align-items: center; */
     /* border: 1px solid white; */
     width: 700px auto;
+    max-width: 700px;
 }
 .tecnologias{
     display: flex;
