@@ -6,7 +6,20 @@
     font-family: 'Manrope', sans-serif;
     /* background-color: #0f0f0f; */
 }
+@media (max-width: 768px) {
+    header {
+        justify-content: space-between; /* Cambia para dar espacio al logotipo o menú desplegable */
+    }
 
+    ul {
+        flex-direction: column; /* Coloca los elementos de navegación en una columna */
+        width: auto;
+    }
+
+    ul a {
+        width: auto;
+    }
+}
 header{
     display: flex;
     align-items: center;
@@ -261,7 +274,7 @@ button::after{
     flex-direction: column;
     flex-grow: 1;
     flex-basis: 200;
-    width: 600px;
+    width: 600px auto;
     height: 200px;
     align-items: center;
     text-align: left;
@@ -275,7 +288,7 @@ button::after{
     flex-direction: column;
     flex-grow: 1;
     flex-basis: 200;
-    width: 600px;
+    width: 600px auto;
     height: 200px;
     align-items: center;
     text-align: left;
@@ -287,7 +300,7 @@ button::after{
 .cardEducation{
     display: flex;
     background-color: #0f0f0f;
-    width: 500px;
+    width: 500px auto;
     padding: 20px;
 }
 .cardEducation img{
@@ -312,7 +325,7 @@ button::after{
     justify-content: center;
     align-items: center; */
     /* border: 1px solid white; */
-    width: 700px;
+    width: 700px auto;
 }
 .tecnologias{
     display: flex;
@@ -339,7 +352,7 @@ button::after{
 /*--------------------------------------------------------------*/
 
 .sectContacto{
-    height: 600px;
+    height: 600px auto;
     background-color: #0f0f0f;
     color: #Fff;
     display: flex;
@@ -359,7 +372,7 @@ button::after{
     justify-content: center;
     /* justify-content: center; */
     /* align-items: center; */
-    width: 900px;
+    width: 900px auto;
     margin: 40px;
     /* padding: 50px; */
     /* gap: 50px; */
